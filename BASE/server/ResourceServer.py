@@ -20,6 +20,8 @@ def HandleFunc(sock, addr):
             print data
             with open(_clientip, 'w') as f:
                 f.write(str(data))
+            from sh import jq
+            print jq('.', _clientip)
     sock.close()
 
 if __name__ == '__main__':
