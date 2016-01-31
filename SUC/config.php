@@ -3,10 +3,10 @@ if (!isset ($_SESSION)) {
 	ob_start();
 	session_start();
 }
- $hostname="127.0.0.1:33061"; //mysql地址
- $basename="test";            //mysql用户名
+ $hostname="101.200.125.9"; //mysql地址
+ $basename="suc";            //mysql用户名
  $basepass="passwd";          //mysql密码
- $database="reg";             //mysql数据库名称
+ $database="suc";             //mysql数据库名称
  $adminor="admin";            //设置管理员账号
 
  $conn=mysql_connect($hostname,$basename,$basepass)or die("error!"); //连接mysql              

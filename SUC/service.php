@@ -31,20 +31,17 @@ $rs=mysql_fetch_array(mysql_query($sql)); //members array
 if($_SESSION['member']) {
   //欢迎信息
 ?>
-  <strong style="color:white">Welcome:<? echo $rs['member_name'];?></strong>&nbsp;&nbsp;
+  <strong>Welcome:<? echo $rs['member_name'];?></strong>&nbsp;&nbsp;
   <a href='?tj=destroy'>注销本次登录</a>&nbsp;&nbsp;
   <a href=member.php>返回个人中心</a>
 <?php } else {
   echo "<script>location='index.php';</script>";
 }
 ?>
+
 <!--正文-->
 <div>
-<form action="" method="post">
-<input name="name" type="text" id="name">
-<input name="password" type="password" id="name">
-<input name="submit2" type="submit" value="用户登录"/>
-</form>
+<h1>Hello World!</h1>
 </div>
 
 <?php include 'footer.html';?>
