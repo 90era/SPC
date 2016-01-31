@@ -12,16 +12,6 @@ require_once ('config.php');
 </head>
 <body>
 
-<!--注册表单
-if(){
-  registry_form
-}
-if() {
-  empty=login;registry=registry;
-}
--->
-
-
 <!--registry start-->
 <?php if($_GET['tj'] == 'register'){ ?>
 <form id="theForm" name="theForm" method="post" action="" onSubmit="return chk(this)" runat="server" style="margin-bottom:0px; font-size: 12px;">
